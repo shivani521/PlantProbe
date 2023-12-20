@@ -1,4 +1,0 @@
-to import drop zone use the following statenemnt 
-import {useDropzone} from 'react-dropzone'
-to import dropzone uploader we need to import in the following way
-import 'react-dropzone-uploader/dist/styles.css'
