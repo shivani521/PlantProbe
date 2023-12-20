@@ -11,26 +11,31 @@ function Home() {
     setFile(selectedFile);
 
     const reader = new FileReader();
-    reader.onload = (e) => setBase64Image(e.target.result);
+    reader.onload = (e) => {
+      const imageData = e.target.result;
+      setBase64Image(imageData);
+      setListImage([imageData]);
+    };
     reader.readAsDataURL(selectedFile);
-    setListImage([`${base64Image}`]);
   };
   // data:image/jpeg;base64,
 
   async function handleFormSubmit(event) {
+    console.log("list_image", [base64Image]);
+
     const response = await fetch(
       "https://plant.id/api/v3/health_assessment?details=local_name,description,url,treatment,classification,common_names,cause",
       {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
-          "Api-Key": `${process.env.REACT_APP_UserApiKey}`,
+          "Api-Key": `${process.env.REACT_APP_USER_API_KEY}`,
         },
 
-        query: JSON.stringify({
-          images: list_image,
-          latitude: latitude,
-          longitude: longitude,
+        body: JSON.stringify({
+          images: [base64Image],
+          latitude,
+          longitude,
           similar_images: true,
         }),
       }
@@ -38,7 +43,6 @@ function Home() {
     const data = await response.json();
     console.log(data);
   }
-  console.log(typeof list_image[0]);
   const [latitude, setLatitude] = useState(null);
   const [longitude, setLongitude] = useState(null);
 
@@ -52,7 +56,6 @@ function Home() {
       });
     }
   }, []);
-  console.log(typeof list_image);
   return (
     <div>
       {/* we need to get user permission for location */}
