@@ -15,7 +15,7 @@
     font-family: Times New Roman;
   }
   .sub_head {
-    @apply text-black text-[1.3125rem] not-italic font-normal leading-[2.1875rem] w-[20.0625rem] h-[10.375rem] shrink-0 ml-48 mt-[2.2rem];
+    @apply text-black text-[1.3125rem] not-italic font-normal leading-[2.1875rem] w-[20.0625rem] h-[10.375rem] shrink-0 ml-72 mt-[2.2rem];
     font-family: Poppins;
   }
   .submit_form {
@@ -25,8 +25,11 @@
     @apply text-[larger] shadow-[2px_3px_4px_0px_rgba(0,0,0,0.25)] h-auto w-max flex flex-row ml-96 mt-[1.4rem] p-4 rounded-[0.3125rem];
     background: rgba(16, 200, 0, 0.9);
   }
+  .plantSVG{
+    @apply mt-[-13rem] z-[1] ml-[0rem];
+  }
   .your_plant2 {
-    @apply mt-[-18rem];
+    @apply mt-[-20.5rem] z-0;
   }
   .rectSVG {
     @apply w-[36.45844rem] h-[67.56056rem] shrink mt-[-17rem] ml-40;
@@ -40,4 +43,31 @@
   .your_icon {
     @apply mt-[-5rem] z-0 ml-[48rem];
   }
-  
+ 
+.submit_form {
+  @apply flex flex-row bg-[whitesmoke];
+}
+.container {
+  @apply mt-16;
+}
+.heading {
+  @apply inline text-[4.1875rem] font-normal not-italic leading-[normal] tracking-[0.09281rem] text-[rgb(0_0_0_/_var(--tw-text-opacity))] ml-[5%] mb-8;
+  --tw-text-opacity: 1;
+  font-family: Times New Roman;
+}
+.content {
+  @apply text-[1.7875rem] font-thin not-italic leading-[normal] tracking-[0.09281rem] text-[rgb(0_0_0_/_var(--tw-text-opacity))] ml-[5%] mt-20;
+  /* display: inline; */
+  --tw-text-opacity: 1;
+  font-family: Times New Roman;
+}
+.content .submitBtn {
+  @apply text-[large] ml-0;
+  font-family: Poppins;
+}
+.right {
+  @apply w-80 h-80 rounded-[50%];
+}
+.icon {
+  @apply mt-[-15rem] ml-[70rem] rounded-[50%];
+}
