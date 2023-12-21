@@ -1,7 +1,7 @@
 import React from "react";
 import { useState, useEffect } from "react";
 // import { useDropzone } from "react-dropzone";
-
+import { useNavigate } from "react-router-dom";
 import "./index.css";
 import YourImage from "../../assets/Image.png";
 import YourIcon from "../../assets/Icon.jpg";
@@ -12,6 +12,7 @@ function Home() {
   const [file, setFile] = useState(null);
   const [base64Image, setBase64Image] = useState(null);
   const [list_image, setListImage] = useState([]);
+  const navigate = useNavigate();
   const handleChange = (event) => {
     const selectedFile = event.target.files[0];
     setFile(selectedFile);
@@ -46,6 +47,9 @@ function Home() {
     );
     const data = await response.json();
     console.log(data);
+    const result = await data;
+    localStorage.setItem("result", JSON.stringify(result));
+    navigate("/result");
   }
   const [latitude, setLatitude] = useState(null);
   const [longitude, setLongitude] = useState(null);
