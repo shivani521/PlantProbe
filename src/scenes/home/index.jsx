@@ -3,8 +3,6 @@ import { useState, useEffect } from "react";
 // import { useDropzone } from "react-dropzone";
 import { useNavigate } from "react-router-dom";
 import "./index.css";
-import { useNavigate } from "react-router-dom";
-import "./index.css";
 import YourImage from "../../assets/Image.png";
 import YourIcon from "../../assets/Icon.jpg";
 import yourPlant2 from "../../assets/Plant 2.png";
@@ -154,7 +152,10 @@ function Home() {
           </div>
         </div>
       </div>
-      <div className="right_col">
+      <div>
+        <img className="Icon2" src={Icon2} alt="this is your icon" />
+      </div>
+      {/* <div className="right_col">
       <svg className="rectSVG" xmlns="http://www.w3.org/2000/svg" width="584" height="807" viewBox="0 0 584 807" fill="none">
   <path d="M0.473755 -273.979H583.808V515.323C583.808 676.407 453.225 806.991 292.141 806.991C131.058 806.991 0.473755 676.407 0.473755 515.323V-273.979Z" fill="#C0F5D8"/>
 </svg>
@@ -164,7 +165,7 @@ function Home() {
 </svg>
 <img className="your_icon" src={YourIcon} alt="your icon"/>
         
-      </div>
+      </div> */}
     </div>
   );
 }

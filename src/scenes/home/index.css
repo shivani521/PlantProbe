@@ -71,3 +71,10 @@
 .icon {
   @apply mt-[-15rem] ml-[70rem] rounded-[50%];
 }
+.Icon2 {
+  border-radius: 50%;
+  height: 25rem;
+  width: 25rem;
+  margin-left: 65rem;
+  margin-top: -19rem;
+}
