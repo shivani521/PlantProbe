@@ -26,7 +26,7 @@ function Result() {
   
   
   const renderPreventiveMeasures = () => {
-    const isHealthy = jsonResult.result.is_healthy;
+    const isHealthy = jsonResult.result.is_healthy.binary;
   
     console.log("prevention fetched", isHealthy);
     if (!isHealthy) {
@@ -34,7 +34,7 @@ function Result() {
         <div>
           <h2>Preventive Measures</h2>
           <ul>
-           
+           {/* suggestion.desciption displayed */}
           </ul>
           </div>
           );

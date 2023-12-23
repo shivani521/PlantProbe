@@ -2,11 +2,12 @@ import React from "react";
 import { useState, useEffect } from "react";
 // import { useDropzone } from "react-dropzone";
 import { useNavigate } from "react-router-dom";
-import "./index.css";
 import YourImage from "../../assets/Image.png";
 import YourIcon from "../../assets/Icon.jpg";
 import yourPlant2 from "../../assets/Plant 2.png";
 import Icon2 from "../../assets/icon2.jpg";
+
+import "./index.css";
 
 function Home() {
   const navigate = useNavigate();

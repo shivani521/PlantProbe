@@ -15,7 +15,7 @@
     font-family: Times New Roman;
   }
   .sub_head {
-    @apply text-black text-[1.3125rem] not-italic font-normal leading-[2.1875rem] w-[20.0625rem] h-[10.375rem] shrink-0 ml-72 mt-[2.2rem];
+    @apply text-black text-[1.3125rem] not-italic font-normal leading-[2.1875rem] w-[20.0625rem] h-[10.375rem] shrink-0 ml-[18rem] mt-[1.5rem];
     font-family: Poppins;
   }
   .submit_form {
@@ -26,7 +26,7 @@
     background: rgba(16, 200, 0, 0.9);
   }
   .plantSVG{
-    @apply mt-[-13rem] z-[1] ml-[0rem];
+    @apply mt-[-10rem] z-[1] ml-[0rem];
   }
   .your_plant2 {
     @apply mt-[-20.5rem] z-0;
