@@ -8,6 +8,8 @@ import YourIcon from "../../assets/Icon.jpg";
 import yourPlant2 from "../../assets/Plant 2.png";
 import Icon2 from "../../assets/icon2.jpg";
 
+import "./index.css";
+
 function Home() {
   const navigate = useNavigate();
   const [file, setFile] = useState(null);

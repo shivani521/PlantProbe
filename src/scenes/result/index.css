@@ -15,7 +15,7 @@
     font-family: Times New Roman;
   }
   .sub_head {
-    @apply text-black text-[1.3125rem] not-italic font-normal leading-[2.1875rem] w-[20.0625rem] h-[10.375rem] shrink-0 ml-[18rem] mt-[1.5rem];
+    @apply text-black text-[1.3125rem] not-italic font-normal leading-[2.1875rem] w-[20.0625rem] h-[10.375rem] shrink-0 ml-24 mt-[2.2rem];
     font-family: Poppins;
   }
   .submit_form {
@@ -26,10 +26,10 @@
     background: rgba(16, 200, 0, 0.9);
   }
   .plantSVG{
-    @apply mt-[-10rem] z-[1] ml-[0rem];
+    @apply mt-[-13rem] z-[1] ml-[0rem];
   }
   .your_plant2 {
-    @apply mt-[-20.5rem] z-0;
+    @apply mt-[-16.5rem] z-0;
   }
   .rectSVG {
     @apply w-[36.45844rem] h-[67.56056rem] shrink mt-[-17rem] ml-40;
@@ -73,4 +73,8 @@
 }
 .Icon2 {
   @apply h-[25rem] w-[25rem] mt-[-19rem] ml-[65rem] rounded-[50%];
+}
+
+body{
+  background-color: #d1ffdf !important;
 }
